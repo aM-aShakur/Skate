@@ -1,0 +1,30 @@
+
+div.header-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-color: #4A6AA4;
+  font-family: Roboto;
+}
+
+h1.header-logo {
+  font-weight: bolder;
+  color: #E5E7EB;
+  font-size: 24px;
+  margin-top: auto;
+  margin-left: 54px;
+  padding: 16px;
+  
+
+}
+
+div.header-link{
+  display: flex;
+  padding: 16px;
+  border: white;
+  margin: 8px;
+  font-size: 18px;
+}
