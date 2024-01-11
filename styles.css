@@ -10,21 +10,49 @@ div.header-section {
   font-family: Roboto;
 }
 
-h1.header-logo {
-  font-weight: bolder;
-  color: #E5E7EB;
-  font-size: 24px;
-  margin-top: auto;
-  margin-left: 54px;
-  padding: 16px;
-  
-
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4A9CEE;
 }
 
-div.header-link{
+li {
+  float: right;
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.title {
+  background-color: #5A5A5A;
+  float: left;
+  font-weight: bolder;
+}
+
+div.header-info {
   display: flex;
-  padding: 16px;
-  border: white;
-  margin: 8px;
-  font-size: 18px;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+div.header-info button {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: .1rem;
+  padding: 5px;
+  border-radius: 8px;
+  width: fit-content;
+  background-color: #4A9CEE;
 }
