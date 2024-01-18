@@ -1,13 +1,11 @@
+html * {
+  font-family: 'Roboto', sans-serif !important;
+}
 
 div.header-section {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: auto;
+  display: inline-block;
+  width: 100%;
   background-color: #4A6AA4;
-  font-family: Roboto;
 }
 
 ul {
@@ -20,7 +18,7 @@ ul {
 
 li {
   float: right;
-  border-right: 1px solid #bbb;
+  border-right: 1px solid #5A5A5A;
 }
 
 li a {
@@ -29,6 +27,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 24px;
 }
 
 li.title {
@@ -40,19 +39,41 @@ li.title {
 div.header-info {
   display: flex;
   flex-direction: column;
-  text-align: center;
   color: white;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  font-size: 24px;
+
 }
 
 div.header-info button {
   color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: .1rem;
-  padding: 5px;
+  padding: 5px; 
   border-radius: 8px;
   width: fit-content;
-  background-color: #4A9CEE;
+  background-color: #5A5A5A;
+  margin: 20px;
 }
+
+#header-image {
+  width: 600px;
+  height: auto;
+  border: #5A5A5A solid 5px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+
+.row {
+  display: flex;
+  }
+  
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  }
