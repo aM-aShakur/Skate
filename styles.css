@@ -29,18 +29,18 @@ body {
 .column {
   float: left;
   width: 50%;
-  padding: 15px;
+  padding: 60px;
   background-color: #29739C;
   text-align: center;
 }
 
-.header-row::after{
+.row::after{
   content: "";
   display: table;
   clear: both;
 }
 
-.header-row button {
+.row button {
   background-color: #838383;
   color: white;
   border: 2px solid #E6E69C;
@@ -51,10 +51,10 @@ body {
   display: inline-block;
   font-size: 24px;
   padding: 15px 32px;
-
+  letter-spacing: 2px;
 }
 
-.header-row button:hover {
+.row button:hover {
   background-color: #E6E69C;
   color: black;
 }
@@ -66,4 +66,42 @@ body {
   margin-bottom: 2px;
 }
 
+.m-column {
+  flex: 33.33%;
+  padding: 20px;
 
+}
+
+.m-row {
+  background-color: #838383; 
+  display: flex;
+  padding: 50px;
+}
+
+.m-image {
+  border: #104A7B solid 5px;
+  width: 525px;
+  height: auto;
+  margin: 25px;
+}
+
+.quote {
+  display: block;
+  background-color: #4A9CEE;
+  text-align: center;
+  font-size: 34px;
+  word-spacing: 1.25px;
+  line-height: 50px;
+  padding: 50px;
+  color: white;
+}
+
+.footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 5px;
+
+}
