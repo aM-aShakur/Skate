@@ -1,61 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="styles.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-<div class="nav">
-  <a href="#contact">Contact</a>
-  <a href="#news">News</a>
-  <a href="#home">Home</a>
-  <a href="#skate" style="float: left; background-color: #838383;">Skate</a>
-</div>
 
-  <div style= "padding-bottom: 40px; background-color: #29739C;"class="row">
-    <div class="column">
-    <h1 style="color: white; padding-bottom: 40px; font-size: 48px;"> My favorite skaters.</h1>
-    <p style="text-align: center; color: white; font-size: 24px; padding-bottom: 40px;  word-spacing: 1.5px; line-height: 30px;">My name is Muhaymin, I love skating, I started skating during the pandemic to pass time and be outside safely. It quickly took over my life, it opened up so many doors for me, it helped me grow as a person. I owe a lot to skating and I am eternally grateful for it. Here are my top 3 skaters ever.</p>
-    <button>Sign Up</button>
-  </div>
-  <div class="column">
-    <img id="header-image" src="https://shorturl.at/crCEN" alt="Filmer taping a skater">
-  </div>
-</div>
+<body class="font-sans">
 
-<h1 style= "color: white; font-size: 48px; text-align: center; margin: 0; background-color: #838383; padding-top: 50px;">The Big 3.</h1>
-
-<div class="m-row">
-  <div class="m-colmumn">
-    <h2 style="color: white; font-size: 28px; text-align: center;">Ishod Wair</h2>
-    <img class="m-image" src="https://shorturl.at/bnEV9" alt="Ishod half-cab flipping a 12 stair."> 
-    <p style="padding: 20px; text-align: left; color: white; font-size: 24px; word-spacing: 1.5px; line-height: 30px;">My first favorite skater is Ishod Wair. His style is so relaxed and cool. Here he is half-cab flipping a 12 stair.</p>
+  <div class="nav flex items-center justify-between bg-blue-900 overflow-hidden px-4">
+    <a href="#skate" class="hidden md:block py-4 px-2 text-white text-lg">Skate</a>
+    <div class="flex flex-col items-center text-center md:text-left md:items-start md:flex-row md:w-full md:justify-end">
+        <a href="#home" class="block py-4 px-2 text-white text-lg hover:bg-yellow-300 hover:text-black md:mx-2">Home</a>
+        <a href="#news" class="block py-4 px-2 text-white text-lg hover:bg-yellow-300 hover:text-black md:mx-2">News</a>
+        <a href="#contact" class="block py-4 px-2 text-white text-lg hover:bg-yellow-300 hover:text-black md:mx-2">Contact</a>
     </div>
-  <div class="m-colmumn">
-    <h2 style="color: white; font-size: 28px; text-align: center;">Mark Suciu</h2>
-    <img class="m-image" src="https://shorturl.at/dpwUW" alt="Mark Suciu backside flipping."> 
-    <p style="padding: 20px; text-align: left; color: white; font-size: 24px;  word-spacing: 1.5px; line-height: 30px;">My second favorite skater is Mark Suciu. He has the quickest feet in the west. Here he is backside flipping.</p>
-  </div>
-  <div class="m-colmumn">
-    <h2 style="color: white;font-size: 28px; text-align: center;">TJ Rogers</h2>
-    <img class="m-image" src="https://shorturl.at/bkHV3" alt="TJ Rogers frontside 180."> 
-    <p style="padding:20px; text-align: left; color: white; font-size: 24px;  word-spacing: 1.5px; line-height: 30px;">My third favorite skater is TJ Rogers. His style is immaculate, so much drip on this man it is unbelievable. Here he is front-180ing.</p>
-  </div>
-  </div>
+</div>
 
-  <div class="quote">
-    <p>
-      “Once you pick up a skateboard, you’ll find out that it’s not a hobby, it’s not a sport, it’s a lifestyle." <br>- Lil Wayne
-    </p>
+<div class="row md:flex md:items-center h-full bg-blue-800">
+  <div class="column w-full md:w-1/2 p-6 pb-10 bg-blue-800 text-white text-center">
+      <h1 class="text-4xl pb-6"> My favorite skaters.</h1>
+      <p class="text-xl pb-6 leading-7">My name is Muhaymin, I love skating, I started skating during the pandemic to pass time and be outside safely. It quickly took over my life, it opened up so many doors for me, it helped me grow as a person. I owe a lot to skating and I am eternally grateful for it. Here are my top 3 skaters ever.</p>
+      <button class="bg-gray-600 hover:bg-yellow-300 text-white font-bold py-2 px-4 rounded-full text-xl">Sign Up</button>
   </div>
+  <div class="column w-full md:w-1/2 p-6 pb-10 bg-blue-800">
+      <img id="header-image" src="https://tinyurl.com/594yt89a" alt="Filmer taping a skater" class="w-full border-4 border-gray-600 md:max-w-md mx-auto">
+  </div>
+</div>
 
-  <div class="footer">
-    <h1>| Muhaymin's Skating Landing Page |</h1>
-  </div>
+    <h1 class="text-4xl text-center bg-gray-700 pt-6 pb-4 text-white">The Big 3.</h1>
+
+    <div class="m-row bg-gray-600 flex flex-wrap justify-between p-6">
+        <div class="m-column w-full sm:w-1/2 lg:w-1/3 p-4">
+            <h2 class="text-2xl text-center text-white">Ishod Wair</h2>
+            <img class="m-image border-4 border-blue-900 mx-auto" src="https://shorturl.at/bnEV9" alt="Ishod half-cab flipping a 12 stair.">
+            <p class="p-4 text-white text-xl leading-7">My first favorite skater is Ishod Wair. His style is so relaxed and cool. Here he is half-cab flipping a 12 stair.</p>
+        </div>
+        <div class="m-column w-full sm:w-1/2 lg:w-1/3 p-4">
+            <h2 class="text-2xl text-center text-white">Mark Suciu</h2>
+            <img class="m-image border-4 border-blue-900 mx-auto" src="https://shorturl.at/dpwUW" alt="Mark Suciu backside flipping.">
+            <p class="p-4 text-white text-xl leading-7">My second favorite skater is Mark Suciu. He has the quickest feet in the west. Here he is backside flipping.</p>
+        </div>
+        <div class="m-column w-full sm:w-1/2 lg:w-1/3 p-4">
+            <h2 class="text-2xl text-center text-white">TJ Rogers</h2>
+            <img class="m-image border-4 border-blue-900 mx-auto" src="https://shorturl.at/bkHV3" alt="TJ Rogers frontside 180.">
+            <p class="p-4 text-white text-xl leading-7">My third favorite skater is TJ Rogers. His style is immaculate, so much drip on this man it is unbelievable. Here he is front-180ing.</p>
+        </div>
+    </div>
+
+    <div class="quote bg-blue-500 text-center text-2xl tracking-wider leading-12 p-8 text-white">
+        <p>
+            “Once you pick up a skateboard, you’ll find out that it’s not a hobby, it’s not a sport, it’s a lifestyle." <br>- Lil Wayne
+        </p>
+    </div>
+
+    <div class="footer bg-black text-white text-center p-1 tracking-widest">
+        <h1>| Muhaymin's Skating Landing Page |</h1>
+    </div>
+
 </body>
+
 </html>
